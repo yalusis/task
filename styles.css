@@ -53,7 +53,7 @@ body{
     overflow-y: scroll;
 }
 
-pre {
+#xmlContent {
     white-space: pre-wrap; 
     word-wrap: break-word; 
     overflow-wrap: break-word; 
