@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div id="mainContainer">
+        <h1>Test</h1>
+        <div id="firstContainer" class="commonContainer">
+            <div class="inputContainer">
+                <label class="labelText">Name/Value Pair</label>
+                <input id="inputElement" type="text" placeholder="Name=Value"/>
+            </div>
+            <div class="submitContainer">
+                <input class="submitButton" type="submit" value="Add"/>
+            </div>
+        </div>
+        <div class="commonContainer">
+            <div class="inputContainer">
+                <label class="labelText" >Name/Value Pair List</label>
+                <ul id="nameValueList"></ul>
+            </div>
+            <div id="fewButton" class="submitContainer" >
+                <div>
+                    <input class="submitButton" type="submit" value="Sort by Name"/>
+                </div>
+                <div>
+                    <input class="submitButton" type="submit" value="Sort by Value"/>
+                </div>
+                <div>
+                    <input class="submitButton" type="submit" value="Delete"/>
+                </div>
+                <div>
+                    <input class="submitButton" type="submit" value="Snow XML"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
