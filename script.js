@@ -64,10 +64,19 @@ document.addEventListener('DOMContentLoaded', function() {
     nameValueList.innerHTML = ''; // Clear the list
     nameValueList.append(...items); // Append sorted items back to the list
   });
+  // Add event listener for click events on the nameValueList
+  nameValueList.addEventListener('click', function(event) {
+    const target = event.target;
+     // Check if the clicked element is an <li> element
+    if (target.tagName === 'LI') {
+        // Toggle the 'selected' class on the clicked element
+        target.classList.toggle('selected'); 
+    }
+  });
 
   // Event listener for the delete button click
   deleteButton.addEventListener('click', function() {
-    const selectedItems = nameValueList.querySelectorAll('li');
+    const selectedItems = nameValueList.querySelectorAll('li.selected');
     // Remove all selected items from the list
     selectedItems.forEach((item) => item.remove());
   });

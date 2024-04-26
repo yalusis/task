@@ -58,3 +58,8 @@ body{
     word-wrap: break-word; 
     overflow-wrap: break-word; 
 }
+
+.selected {
+    color: red;
+    font-style: italic;
+}
